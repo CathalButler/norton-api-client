@@ -6,6 +6,7 @@ class Channel {
   String name = null;
 
   String type = null;
+
   //enum typeEnum {  TEXT,  VOICE,  };{
   Channel();
 

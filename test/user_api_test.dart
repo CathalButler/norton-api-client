@@ -1,6 +1,7 @@
 import 'package:openapi/api.dart';
 import 'package:test/test.dart';
 
+
 /// tests for UserApi
 void main() {
   var instance = UserApi();
@@ -10,7 +11,7 @@ void main() {
     //
     // Creates a new instance of a User.
     //
-    //Future createUser(User user) async
+    //Future createUser(User user) async 
     test('test createUser', () async {
       // TODO
     });
@@ -19,7 +20,7 @@ void main() {
     //
     // Deletes an existing User.
     //
-    //Future deleteUser(String userId) async
+    //Future deleteUser(String userId) async 
     test('test deleteUser', () async {
       // TODO
     });
@@ -28,7 +29,7 @@ void main() {
     //
     // Gets the details of a single instance of a User.
     //
-    //Future<User> getUser(String userId) async
+    //Future<User> getUser(String userId) async 
     test('test getUser', () async {
       // TODO
     });
@@ -37,7 +38,7 @@ void main() {
     //
     // Gets a list of all User entities.
     //
-    //Future<List<User>> getUsers() async
+    //Future<List<User>> getUsers() async 
     test('test getUsers', () async {
       // TODO
     });
@@ -46,9 +47,10 @@ void main() {
     //
     // Updates an existing User.
     //
-    //Future updateUser(String userId, User user) async
+    //Future updateUser(String userId, User user) async 
     test('test updateUser', () async {
       // TODO
     });
+
   });
 }

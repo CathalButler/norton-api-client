@@ -165,7 +165,7 @@ class ChannelApi {
   /// Delete a Channel with HTTP info returned
   ///
   /// Deletes an existing Channel.
-  Future deleteChannelWithHttpInfo(int channelId) async {
+  Future deleteChannelWithHttpInfo(String channelId) async {
     Object postBody;
 
     // verify required params are set
@@ -203,7 +203,7 @@ class ChannelApi {
   /// Delete a Channel
   ///
   /// Deletes an existing Channel.
-  Future deleteChannel(int channelId) async {
+  Future deleteChannel(String channelId) async {
     Response response = await deleteChannelWithHttpInfo(channelId);
     if (response.statusCode >= 400) {
       throw ApiException(response.statusCode, _decodeBodyBytes(response));
@@ -597,7 +597,7 @@ class ChannelApi {
   /// Update a Channel with HTTP info returned
   ///
   /// Updates an existing Channel.
-  Future updateChannelWithHttpInfo(int channelId, Channel channel) async {
+  Future updateChannelWithHttpInfo(String channelId, Channel channel) async {
     Object postBody = channel;
 
     // verify required params are set
@@ -638,7 +638,7 @@ class ChannelApi {
   /// Update a Channel
   ///
   /// Updates an existing Channel.
-  Future updateChannel(int channelId, Channel channel) async {
+  Future updateChannel(String channelId, Channel channel) async {
     Response response = await updateChannelWithHttpInfo(channelId, channel);
     if (response.statusCode >= 400) {
       throw ApiException(response.statusCode, _decodeBodyBytes(response));
