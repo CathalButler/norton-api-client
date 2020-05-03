@@ -22,5 +22,4 @@ part 'model/inline_object.dart';
 part 'model/message.dart';
 part 'model/user.dart';
 
-
 ApiClient defaultApiClient = ApiClient();
