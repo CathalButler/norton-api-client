@@ -19,7 +19,7 @@ class ApiClient {
 
   ApiClient({this.basePath = "https://vertex.chat/api/v1"}) {
     // Setup authentications (key: authentication name, value: authentication).
-    _authentications['LoginRequired'] = ApiKeyAuth("query", "session_id");
+    _authentications['LoginRequired'] = ApiKeyAuth("header", "session_id");
   }
 
   void addDefaultHeader(String key, String value) {

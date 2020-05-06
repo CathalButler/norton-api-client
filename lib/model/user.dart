@@ -2,8 +2,9 @@ part of openapi.api;
 
 class User {
   int id = null;
-
   String name = null;
+
+
   User();
 
   @override
