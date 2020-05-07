@@ -21,6 +21,9 @@ class AccountApi {
       throw ApiException(400, "Missing required param: inlineObject");
     }
 
+//    var value = cookie.get('session_id');
+//    print("Printing cookie" + value);
+
     // create path and map variables
     String path = "/login".replaceAll("{format}", "json");
 
@@ -58,6 +61,8 @@ class AccountApi {
       throw ApiException(response.statusCode, _decodeBodyBytes(response));
     } else if (response.body != null) {
       _isLoggedIn = true;
+//      var value = cookie.get('session_id');
+//      print("Printing cookie" + value);
     } else {
       _isLoggedIn = true;
       return;
