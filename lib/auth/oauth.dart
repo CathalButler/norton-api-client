@@ -3,7 +3,7 @@ part of openapi.api;
 class OAuth implements Authentication {
   String _accessToken;
 
-  OAuth({String accessToken}) : _accessToken = accessToken;
+   OAuth({String accessToken}) : _accessToken = accessToken;
 
   @override
   void applyToParams(
