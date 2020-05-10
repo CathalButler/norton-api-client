@@ -384,7 +384,6 @@ class ChannelApi {
 
     // verify required params are set
 
-
     // create path and map variables
     String path = "/channels".replaceAll("{format}", "json");
 
